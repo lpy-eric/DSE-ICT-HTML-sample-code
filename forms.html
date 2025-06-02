@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Forms</title>
+		<link rel="stylesheet" href="../styles.css" />
+	</head>
+	<body>
+		<h1>HTML Forms</h1>
+		<p>
+			Forms are created with &lt;form&gt; and contain various input elements.
+		</p>
+
+		<!-- <div class="code">
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+    </div> -->
+
+		<div class="example">
+			<form action="/submit" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required />
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required />
+
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+		<h2>Form Input Types</h2>
+		<!-- <div class="code">
+&lt;input type="text"&gt;       &lt;!-- Text input --&gt;
+&lt;input type="password"&gt;  &lt;!-- Password field --&gt;
+&lt;input type="email"&gt;     &lt;!-- Email validation --&gt;
+&lt;input type="number"&gt;    &lt;!-- Numeric input --&gt;
+&lt;input type="date"&gt;      &lt;!-- Date picker --&gt;
+&lt;input type="checkbox"&gt;  &lt;!-- Checkbox --&gt;
+&lt;input type="radio"&gt;     &lt;!-- Radio button --&gt;
+&lt;input type="file"&gt;      &lt;!-- File upload --&gt;
+&lt;input type="submit"&gt;    &lt;!-- Submit button --&gt;
+&lt;textarea&gt;&lt;/textarea&gt;     &lt;!-- Multi-line text --&gt;
+&lt;select&gt;&lt;option&gt;...&lt;/select&gt; &lt;!-- Dropdown --&gt;
+    </div> -->
+
+		<div class="example">
+			<form>
+				<label> Text: <input type="text" maxlength="5" /> </label><br />
+
+				<label> Password: <input type="password" /> </label><br />
+
+				<label> Email: <input type="email" /> </label><br />
+
+				<label> Number: <input type="number" min="1" max="10" /> </label><br />
+
+				<label> Date: <input type="date" /> </label><br />
+
+				<label> <input type="checkbox" /> Checkbox </label>
+				<label> <input type="checkbox" /> Checkbox2 </label><br />
+
+				<label> <input type="radio" name="radio-group" /> Radio 1 </label>
+				<label> <input type="radio" name="radio-group" /> Radio 2 </label><br />
+
+				<label> File: <input type="file" /> </label><br />
+
+				<textarea placeholder="Multi-line text"></textarea><br />
+
+				<select>
+					<option>Option 1</option>
+					<option>Option 2</option></select
+				><br /><br />
+
+				<input type="submit" value="Submit" />
+				<input type="reset" value="Reset all" />
+			</form>
+		</div>
+
+		<p><a href="../index.html">← Back to main page</a></p>
+	</body>
+</html>

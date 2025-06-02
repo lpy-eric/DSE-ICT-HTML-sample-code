@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <p>Tables are created with &lt;table&gt;, &lt;tr&gt; (rows), &lt;th&gt; (headers), and &lt;td&gt; (data cells).</p>
+    
+    <div class="code">
+&lt;table border="1"&gt;
+    &lt;caption&gt;Monthly Savings&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Month&lt;/th&gt;
+        &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;January&lt;/td&gt;
+        &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;February&lt;/td&gt;
+        &lt;td&gt;$150&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </div>
+    
+    <div class="example">
+        <table border="1">
+            <caption>Monthly Savings</caption>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$150</td>
+            </tr>
+        </table>
+    </div>
+    
+    <h2>Advanced Table Features</h2>
+    <div class="code">
+&lt;table border="1"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan="2"&gt;Header spanning 2 columns&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2"&gt;Cell spanning 2 rows&lt;/td&gt;
+            &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Footer 1&lt;/td&gt;
+            &lt;td&gt;Footer 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+    </div>
+    
+    <div class="example">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Header spanning 2 columns</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Cell spanning 2 rows</td>
+                    <td>Row 1, Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer 1</td>
+                    <td>Footer 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <div class="note">
+        <strong>Note:</strong> While the <code>border</code> attribute works, modern tables should be styled with CSS.
+    </div>
+    
+    <p><a href="../index.html">← Back to main page</a></p>
+</body>
+</html>

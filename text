@@ -1,0 +1,20 @@
+basic-html-tutorial/
+│
+├── index.html              # Main entry point
+├── styles.css              # Shared styles
+│
+├── features/
+│   ├── headings.html       # Headings demonstration
+│   ├── paragraphs.html     # Paragraphs demonstration
+│   ├── links.html          # Links demonstration
+│   ├── images.html         # Images demonstration
+│   ├── lists.html          # Lists demonstration
+│   ├── tables.html         # Tables demonstration
+│   ├── forms.html          # Forms demonstration
+│   └── semantic.html       # Semantic elements demonstration
+│
+└── examples/               # Example files used in demonstrations
+    ├── navigation.html
+    ├── content.html
+    ├── image.jpg
+    └── etc.
